@@ -1,10 +1,16 @@
-from ingestion.fetch_yfinance import fetch_stock
-from cleaning.clean_data import clean_price_data
-import pandas as pd
+from storage.pipeline import ingest_many_stocks
 
-df = fetch_stock("HDFCBANK.NS")
-clean_df = clean_price_data(df)
-pd.set_option("display.max_columns", None)
-pd.set_option("display.width", None)
-print(clean_df.iloc[20:29])
-#print(clean_df.isna().sum())
+if __name__ == "__main__":
+    symbols = [
+        "HDFCBANK.NS",
+        "RELIANCE.NS",
+        "TCS.NS",
+        "INFY.NS"
+    ]
+
+    results = ingest_many_stocks(symbols, start="2022-01-01")
+
+    for r in results:
+        print(r)
+
+
