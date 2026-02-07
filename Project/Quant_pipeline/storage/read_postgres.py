@@ -1,9 +1,17 @@
 import pandas as pd
+import os
 from sqlalchemy import create_engine
+from dotenv import load_dotenv
 
+load_dotenv()
 def read_from_postgres(symbol):
+    user = os.getenv("DB_USER")
+    password = os.getenv("DB_PASSWORD")
+    host = os.getenv("DB_HOST")
+    port = os.getenv("DB_PORT")
+    db = os.getenv("DB_NAME")
     engine = create_engine(
-        "postgresql://postgres:Prathu2402@localhost:5432/quantdb"
+        f"postgresql://{user}:{password}@{host}:{port}/{db}"
     )
 
     query = f"""

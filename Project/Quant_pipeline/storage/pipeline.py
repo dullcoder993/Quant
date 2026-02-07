@@ -2,9 +2,9 @@ from ingestion.fetch_yfinance import fetch_stock
 from storage.postgres_loader import load_to_postgres
 from cleaning.clean_data import clean_price_data
 
-def ingest_stock_to_db(symbol, start="2026-01-01"):
+def ingest_stock_to_db(symbol, start,end):
     # 1. Fetch
-    raw_df = fetch_stock(symbol, start=start)
+    raw_df = fetch_stock(symbol, start=start,end = end)
 
     # 2. Clean
     clean_df = clean_price_data(raw_df)
@@ -17,12 +17,12 @@ def ingest_stock_to_db(symbol, start="2026-01-01"):
 
     return f"{symbol} ingested successfully"
 
-def ingest_many_stocks(symbols, start="2022-01-01"):
+def ingest_many_stocks(symbols, start,end):
     results = []
 
     for symbol in symbols:
         try:
-            msg = ingest_stock_to_db(symbol, start=start)
+            msg = ingest_stock_to_db(symbol, start=start,end = end)
             results.append(msg)
         except Exception as e:
             results.append(f"{symbol} failed: {e}")
