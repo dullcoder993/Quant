@@ -3,9 +3,9 @@ from storage.pipeline import ingest_many_stocks
 
 if __name__ == "__main__":
     symbols = [
-        "TCS.NS",
+        "SI=F",
     ]
-    results = ingest_many_stocks(symbols, start="2025-01-01",end = "2025-08-31")
+    results = ingest_many_stocks(symbols, start="2024-01-01",end = "2026-02-3")
 
     for r in results:
         print(r)

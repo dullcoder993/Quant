@@ -14,7 +14,7 @@ import os
  
 
 def main():
-    symbol = "TCS.NS"
+    symbol = "SI=F"
 
     df = read_prices_for_lppl(symbol)
     if df is None or len(df) < 120:
