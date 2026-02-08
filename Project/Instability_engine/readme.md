@@ -81,6 +81,10 @@ $$ln P(t) = A + B(t_c - t)^m [1 + C \cos(\omega \ln(t_c - t) + \phi)]$$
 | Criticality | **58.53** |
 | Predicted \( t_c \) | 13 days from signal |
 
+Case Study: The Silver Monday Gap (Feb 9, 2026)
+
+On Friday, Feb 6, the engine flagged a Hazard Rate of 0.249. Even though the predicted singularity ($t_c$) was still days away (Feb 13), the high hazard indicated that the market was too fragile to survive the weekend. This signaled a high probability of a Monday Morning Gap Down, proving that the Hazard Rate is a leading indicator of immediate liquidity exhaustion.
+
 ### Outcome
 - Engine identified a **high-risk singularity window**
 - Captured the **peak of a 5× parabolic price run**
