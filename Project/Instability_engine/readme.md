@@ -79,7 +79,7 @@ $$ln P(t) = A + B(t_c - t)^m [1 + C \cos(\omega \ln(t_c - t) + \phi)]$$
 | Signal Date | Feb 2, 2026 |
 | Hazard Score | **0.249** |
 | Criticality | **58.53** |
-| Predicted \( t_c \) | 13 days from signal |
+| Predicted \( t_c \) | 13 days from signal +- 2|
 
 Case Study: The Silver Monday Gap (Feb 9, 2026)
 
