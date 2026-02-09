@@ -85,6 +85,15 @@ Case Study: The Silver Monday Gap (Feb 9, 2026)
 
 On Friday, Feb 6, the engine flagged a Hazard Rate of 0.249. Even though the predicted singularity ($t_c$) was still days away (Feb 13), the high hazard indicated that the market was too fragile to survive the weekend. This signaled a high probability of a Monday Morning Gap Down, proving that the Hazard Rate is a leading indicator of immediate liquidity exhaustion.
 
+📊 Silver Status: Feb 9, 2026
+Price: ~$80.25 / ₹2.85 Lakh
+
+Trend: Bearish (Recovery within a crash)
+
+Hazard: High (CME margins are still forcing liquidations)
+
+Singularity: February 13th (4 days away)
+
 ### Outcome
 - Engine identified a **high-risk singularity window**
 - Captured the **peak of a 5× parabolic price run**
