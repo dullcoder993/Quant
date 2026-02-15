@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.optimize import differential_evolution
-from model.lppl_equation import lppl
-from model.lppl_constraints import validate_lppl_params
+from ..model.lppl_equation import lppl
+from ..model.lppl_constraints import validate_lppl_params
 
 # 1. MOVE THIS OUTSIDE (Must be at top level for Mithril Parallelism)
 def lppl_cost(params, t, log_prices):

@@ -5,7 +5,7 @@ if __name__ == "__main__":
     symbols = [
         "SI=F",
     ]
-    results = ingest_many_stocks(symbols, start="2024-01-01",end = "2026-02-3")
+    results = ingest_many_stocks(symbols, start="2024-01-01",end = "2025-12-15")
 
     for r in results:
         print(r)

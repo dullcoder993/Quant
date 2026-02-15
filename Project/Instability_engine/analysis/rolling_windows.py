@@ -1,5 +1,5 @@
 import numpy as np
-from model.lppl_fit import fit_lppl
+from ..model.lppl_fit import fit_lppl
 
 def run_rolling_lppl(t, log_prices, min_window=100, max_window=250, step=10):
     t_last = t[-1]

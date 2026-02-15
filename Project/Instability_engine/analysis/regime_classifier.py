@@ -1,4 +1,4 @@
-from analysis.convergence_metrics import lppl_convergence_metrics
+from ..analysis.convergence_metrics import lppl_convergence_metrics
 
 def classify_lppl_regime(criticality_index):
     """
