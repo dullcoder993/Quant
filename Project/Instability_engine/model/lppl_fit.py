@@ -39,8 +39,8 @@ def fit_lppl(t, log_prices):
         recombination=0.7, 
         tol=0.01, 
         polish=True,
-        workers=-1,            # Now this will work!
-        updating='deferred'    # This removes the UserWarning you saw
+        workers=1,             # Fix for Streamlit Auto-Stopping
+        updating='immediate'   # Changed back to immediate since we are not using multiprocessing anymore
     )
 
     if result.success:

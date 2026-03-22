@@ -17,7 +17,7 @@ def lppl(t, A, B, C, tc, m, omega, phi):
     
     # The Log-Periodic component (The Oscillations)
     # As dt -> 0, the frequency of the cosine increases to infinity.
-    oscillations = C * np.power(dt, m) * np.cos(omega * np.log(dt) + phi)
+    oscillations = B * C * np.power(dt, m) * np.cos(omega * np.log(dt) + phi)
     
     return A + growth + oscillations
 

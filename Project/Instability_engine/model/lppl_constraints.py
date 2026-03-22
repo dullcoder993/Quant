@@ -41,7 +41,7 @@ def validate_lppl_params(params, t_last):
         return False
     # Constraint 6: Damping Condition (Positivity of the Hazard Rate)
     # This ensures the oscillations don't "overpower" the trend.
-    damping = (m * abs(B)) / (omega * abs(C))
+    damping = m / (omega * abs(C) + 1e-9)
     if damping < 0.5:
         return False
 

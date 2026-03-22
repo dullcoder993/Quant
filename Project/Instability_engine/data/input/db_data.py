@@ -4,7 +4,8 @@ import os
 from sqlalchemy import create_engine, text
 from dotenv import load_dotenv
 
-load_dotenv()
+env_path = os.path.join(os.path.dirname(__file__), "../../../../.env")
+load_dotenv(dotenv_path="/home/prathmesh/Desktop/Quant/Project/.env")
 
 def get_engine():
     user = os.getenv("DB_USER")
