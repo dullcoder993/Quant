@@ -8,6 +8,12 @@ env_path = os.path.join(os.path.dirname(__file__), "../../../../.env")
 load_dotenv(dotenv_path="/home/prathmesh/Desktop/Quant/Project/.env")
 
 def get_engine():
+    database_url = os.getenv("DATABASE_URL")
+    if database_url:
+        if database_url.startswith("postgres://"):
+            database_url = database_url.replace("postgres://", "postgresql://", 1)
+        return create_engine(database_url)
+
     user = os.getenv("DB_USER")
     password = os.getenv("DB_PASSWORD")
     host = os.getenv("DB_HOST")
